@@ -1,6 +1,6 @@
 import os
 
-def task1():
+def task():
     with open('day4.txt', 'r') as file_in:
         scores = {}
         noOfCopies = {}
@@ -26,6 +26,6 @@ def task1():
 
 if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
-    solution1, solution2 = task1()
+    solution1, solution2 = task()
     print(f"Solution to part 1: {solution1}")
     print(f"Solution to part 2: {solution2}")

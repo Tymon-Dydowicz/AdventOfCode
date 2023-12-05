@@ -16,7 +16,7 @@ def extractNumbersFromDifferentLine(line, column):
         Right = extractNumber(line, column+1, 1)
     return [int(num) for num in (Left+line[column]+Right).split(".") if num.isnumeric()]
 
-def task1():
+def task():
     with open('day3.txt', 'r') as file_in:
         lines = file_in.readlines()
         task2Result = 0
@@ -43,6 +43,6 @@ def task1():
 
 if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
-    solution1, solution2 = task1()
+    solution1, solution2 = task()
     print(f"Solution to part 1: {solution1}")
     print(f"Solution to part 2: {solution2}")
